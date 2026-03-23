@@ -23,7 +23,6 @@ const HeroSection = () => (
       <p className="text-sm sm:text-base md:text-lg font-body text-primary-foreground/70 mt-3 mb-8 md:mb-10 max-w-xl mx-auto">
         Zabezpečte si prísun čerstvej praženej kávy do vašej kancelárie každý mesiac. Bez starostí a s profesionálnym prístupom.
       </p>
-      </p>
       <a
         href="#ponuka"
         className="inline-block border border-primary-foreground/50 bg-primary-foreground/10 backdrop-blur-sm text-primary-foreground font-body font-medium text-base md:text-lg px-10 md:px-12 py-3 md:py-4 rounded-full hover:bg-primary-foreground/20 transition-all"
