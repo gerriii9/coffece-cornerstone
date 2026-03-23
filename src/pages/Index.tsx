@@ -15,7 +15,7 @@ const HeroSection = () => (
     </div>
     <div className="relative z-10 text-center px-4">
       <div className="flex items-center justify-center mb-8">
-        <img src={coffeceLogo} alt="Coffece logo" className="h-40 md:h-64 brightness-0 invert" />
+        <img src={coffeceLogo} alt="Coffece logo" className="h-[31rem] brightness-0 invert" />
       </div>
       <p className="text-2xl md:text-4xl font-heading text-primary-foreground/90 mb-10 max-w-2xl mx-auto">
         Čerstvá káva pre váš office
