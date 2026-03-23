@@ -24,7 +24,7 @@ const HeroSection = () => (
         Zabezpečte si prísun čerstvej praženej kávy do vašej kancelárie každý mesiac. Bez starostí a s profesionálnym prístupom.
       </p>
       <a
-        href="#ponuka"
+        href="#kontakt"
         className="inline-block border border-primary-foreground/50 bg-primary-foreground/10 backdrop-blur-sm text-primary-foreground font-body font-medium text-base md:text-lg px-10 md:px-12 py-3 md:py-4 rounded-full hover:bg-primary-foreground/20 transition-all"
       >
         Objednať
