@@ -13,16 +13,16 @@ const HeroSection = () => (
       <img src={heroBg} alt="Káva a notebook" className="w-full h-full object-cover" />
       <div className="absolute inset-0 bg-coffee-dark/70" />
     </div>
-    <div className="relative z-10 text-center px-4">
-      <div className="flex items-center justify-center mb-8">
-        <img src={coffeceLogo} alt="Coffece logo" className="h-[31rem] brightness-0 invert" />
+    <div className="relative z-10 text-center px-6">
+      <div className="flex items-center justify-center mb-6 md:mb-8">
+        <img src={coffeceLogo} alt="Coffece logo" className="w-[80vw] max-w-[500px] md:max-w-[600px] lg:max-w-[700px] brightness-0 invert" />
       </div>
-      <p className="text-2xl md:text-4xl font-heading text-primary-foreground/90 mb-10 max-w-2xl mx-auto">
+      <p className="text-xl sm:text-2xl md:text-4xl font-heading text-primary-foreground/90 mb-8 md:mb-10 max-w-2xl mx-auto">
         Čerstvá káva pre váš office
       </p>
       <a
         href="#ponuka"
-        className="inline-block bg-coffee-gold text-coffee-dark font-body font-semibold text-lg px-10 py-4 rounded-lg hover:brightness-110 transition-all"
+        className="inline-block bg-coffee-gold text-coffee-dark font-body font-semibold text-base md:text-lg px-8 md:px-10 py-3 md:py-4 rounded-lg hover:brightness-110 transition-all"
       >
         Objednať
       </a>
@@ -31,20 +31,20 @@ const HeroSection = () => (
 );
 
 const WhySection = () => (
-  <section className="py-20 md:py-28 bg-background">
-    <div className="container mx-auto px-4">
-      <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-foreground mb-16">
+  <section className="py-14 md:py-28 bg-background">
+    <div className="container mx-auto px-6">
+      <h2 className="text-2xl md:text-4xl font-heading font-bold text-center text-foreground mb-10 md:mb-16">
         Prečo si vybrať Coffece?
       </h2>
-      <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+      <div className="grid md:grid-cols-2 gap-10 md:gap-12 items-center max-w-5xl mx-auto">
         <div className="flex justify-center">
           <img
             src={coffeeBag}
             alt="Balenie kávy Coffece"
-            className="rounded-xl shadow-2xl max-h-[450px] object-cover"
+            className="rounded-xl shadow-2xl max-h-[300px] md:max-h-[450px] object-cover w-full max-w-[350px]"
           />
         </div>
-        <div className="space-y-8">
+        <div className="space-y-6 md:space-y-8">
           {[
             { title: "Maximálna čerstvosť", desc: "Kávu pražíme až po vašej objednávke, aby ste dostali ten najlepší zážitok." },
             { title: "Jednoduchá administratíva", desc: "Žiadne zložité zmluvy. Objednajte jednoducho a rýchlo online." },
@@ -53,8 +53,8 @@ const WhySection = () => (
             <div key={item.title} className="flex gap-4">
               <div className="w-2 bg-coffee-gold rounded-full shrink-0" />
               <div>
-                <h3 className="text-xl font-heading font-semibold text-foreground mb-1">{item.title}</h3>
-                <p className="text-muted-foreground font-body">{item.desc}</p>
+                <h3 className="text-lg md:text-xl font-heading font-semibold text-foreground mb-1">{item.title}</h3>
+                <p className="text-sm md:text-base text-muted-foreground font-body">{item.desc}</p>
               </div>
             </div>
           ))}
@@ -65,23 +65,21 @@ const WhySection = () => (
 );
 
 const OfferSection = () => (
-  <section id="ponuka" className="py-20 md:py-28 bg-coffee-cream">
-    <div className="container mx-auto px-4">
-      <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-foreground mb-16">
+  <section id="ponuka" className="py-14 md:py-28 bg-coffee-cream">
+    <div className="container mx-auto px-6">
+      <h2 className="text-2xl md:text-4xl font-heading font-bold text-center text-foreground mb-10 md:mb-16">
         Naša ponuka kávy
       </h2>
-      <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-        {/* Gold card */}
-        <div className="bg-coffee-gold rounded-2xl p-8 flex flex-col items-center text-center shadow-xl hover:scale-105 transition-transform">
-          <img src={coffeePlant} alt="Kávovník" className="h-40 mb-6 object-contain" />
-          <h3 className="text-2xl font-heading font-bold text-coffee-dark mb-2">Zlatý štandard</h3>
-          <p className="text-coffee-dark/80 font-body">Jemná, sladká chuť s orechovými tónmi</p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
+        <div className="bg-coffee-gold rounded-2xl p-6 md:p-8 flex flex-col items-center text-center shadow-xl hover:scale-105 transition-transform">
+          <img src={coffeePlant} alt="Kávovník" className="h-28 md:h-40 mb-4 md:mb-6 object-contain" />
+          <h3 className="text-xl md:text-2xl font-heading font-bold text-coffee-dark mb-2">Zlatý štandard</h3>
+          <p className="text-sm md:text-base text-coffee-dark/80 font-body">Jemná, sladká chuť s orechovými tónmi</p>
         </div>
-        {/* Dark card */}
-        <div className="bg-coffee-dark rounded-2xl p-8 flex flex-col items-center text-center shadow-xl hover:scale-105 transition-transform">
-          <img src={coffeeBeans} alt="Kávové zrná" className="h-40 mb-6 object-contain" />
-          <h3 className="text-2xl font-heading font-bold text-primary-foreground mb-2">Originál</h3>
-          <p className="text-primary-foreground/80 font-body">Intenzívna, plná chuť s čokoládovými tónmi</p>
+        <div className="bg-coffee-dark rounded-2xl p-6 md:p-8 flex flex-col items-center text-center shadow-xl hover:scale-105 transition-transform">
+          <img src={coffeeBeans} alt="Kávové zrná" className="h-28 md:h-40 mb-4 md:mb-6 object-contain" />
+          <h3 className="text-xl md:text-2xl font-heading font-bold text-primary-foreground mb-2">Originál</h3>
+          <p className="text-sm md:text-base text-primary-foreground/80 font-body">Intenzívna, plná chuť s čokoládovými tónmi</p>
         </div>
       </div>
     </div>
@@ -90,10 +88,7 @@ const OfferSection = () => (
 
 const ProductDetailSection = () => (
   <section className="relative overflow-hidden">
-    {/* Diagonal background */}
     <div className="absolute inset-0">
-      <div className="absolute top-0 left-0 w-full h-1/2 bg-coffee-gold" />
-      <div className="absolute bottom-0 left-0 w-full h-1/2 bg-coffee-dark" />
       <div
         className="absolute inset-0"
         style={{
@@ -101,11 +96,11 @@ const ProductDetailSection = () => (
         }}
       />
     </div>
-    <div className="relative z-10 container mx-auto px-4 py-20 md:py-28">
-      <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-        <div className="bg-background/95 backdrop-blur rounded-2xl p-8 md:p-10 shadow-2xl">
-          <h3 className="text-2xl font-heading font-bold text-foreground mb-4">Zlatý štandard</h3>
-          <div className="space-y-3 text-muted-foreground font-body">
+    <div className="relative z-10 container mx-auto px-6 py-14 md:py-28">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto">
+        <div className="bg-background/95 backdrop-blur rounded-2xl p-6 md:p-10 shadow-2xl">
+          <h3 className="text-xl md:text-2xl font-heading font-bold text-foreground mb-4">Zlatý štandard</h3>
+          <div className="space-y-3 text-sm md:text-base text-muted-foreground font-body">
             <p><span className="font-semibold text-foreground">Profil chuti:</span> Jemný, sladký, s tónmi orechov a karamelu</p>
             <p><span className="font-semibold text-foreground">Praženie:</span> Stredné</p>
             <p><span className="font-semibold text-foreground">Krajina pôvodu:</span> Brazília – Cerrado Mineiro</p>
@@ -113,9 +108,9 @@ const ProductDetailSection = () => (
             <p className="pt-2">Ideálna voľba pre tých, ktorí uprednostňujú jemnú a vyváženú chuť kávy s dlhým dozvukom.</p>
           </div>
         </div>
-        <div className="bg-background/95 backdrop-blur rounded-2xl p-8 md:p-10 shadow-2xl">
-          <h3 className="text-2xl font-heading font-bold text-foreground mb-4">Originál</h3>
-          <div className="space-y-3 text-muted-foreground font-body">
+        <div className="bg-background/95 backdrop-blur rounded-2xl p-6 md:p-10 shadow-2xl">
+          <h3 className="text-xl md:text-2xl font-heading font-bold text-foreground mb-4">Originál</h3>
+          <div className="space-y-3 text-sm md:text-base text-muted-foreground font-body">
             <p><span className="font-semibold text-foreground">Profil chuti:</span> Intenzívny, plný, s čokoládovými a korenitými tónmi</p>
             <p><span className="font-semibold text-foreground">Praženie:</span> Tmavé</p>
             <p><span className="font-semibold text-foreground">Krajina pôvodu:</span> Brazília – Cerrado Mineiro</p>
@@ -129,30 +124,29 @@ const ProductDetailSection = () => (
 );
 
 const HowItWorksSection = () => (
-  <section className="py-20 md:py-28 bg-background">
-    <div className="container mx-auto px-4">
-      <h2 className="text-3xl md:text-4xl font-heading font-bold text-center text-foreground mb-16">
+  <section className="py-14 md:py-28 bg-background">
+    <div className="container mx-auto px-6">
+      <h2 className="text-2xl md:text-4xl font-heading font-bold text-center text-foreground mb-10 md:mb-16">
         Ako to funguje?
       </h2>
-      <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
-        <div className="space-y-8">
+      <div className="grid md:grid-cols-2 gap-10 md:gap-12 items-center max-w-5xl mx-auto">
+        <div className="space-y-6 md:space-y-8">
           {[
             { num: "01", title: "Vyberte si kávu", desc: "Zvoľte si z našej ponuky ten správny blend." },
             { num: "02", title: "Nastavte množstvo", desc: "Určite koľko kávy potrebujete pre vašu kanceláriu." },
             { num: "03", title: "My sa postaráme", desc: "Čerstvo upraženú kávu zabalíme a pripravíme na doručenie." },
             { num: "04", title: "Jednoduchá platba", desc: "Platba faktúrou alebo online – ako vám vyhovuje." },
           ].map((step) => (
-            <div key={step.num} className="flex gap-5 items-start">
-              <span className="text-3xl font-heading font-bold text-coffee-gold">{step.num}</span>
+            <div key={step.num} className="flex gap-4 md:gap-5 items-start">
+              <span className="text-2xl md:text-3xl font-heading font-bold text-coffee-gold">{step.num}</span>
               <div>
-                <h3 className="text-lg font-heading font-semibold text-foreground mb-1">{step.title}</h3>
-                <p className="text-muted-foreground font-body">{step.desc}</p>
+                <h3 className="text-base md:text-lg font-heading font-semibold text-foreground mb-1">{step.title}</h3>
+                <p className="text-sm md:text-base text-muted-foreground font-body">{step.desc}</p>
               </div>
             </div>
           ))}
         </div>
-        <div className="flex justify-center">
-          {/* Minimalist single-line coffee cup SVG */}
+        <div className="hidden md:flex justify-center">
           <svg viewBox="0 0 200 200" className="w-64 h-64 text-coffee-gold" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
             <path d="M40 120 C40 120 40 160 60 170 C80 180 120 180 140 170 C160 160 160 120 160 120" />
             <line x1="40" y1="120" x2="160" y2="120" />
@@ -168,14 +162,14 @@ const HowItWorksSection = () => (
 );
 
 const HeartSection = () => (
-  <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+  <section className="relative h-[50vh] md:h-[60vh] min-h-[350px] flex items-center justify-center overflow-hidden">
     <img src={plantation} alt="Kávové plantáže v Brazílii" className="absolute inset-0 w-full h-full object-cover" />
     <div className="absolute inset-0 bg-coffee-dark/60" />
-    <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
-      <h2 className="text-3xl md:text-5xl font-heading font-bold text-primary-foreground mb-4">
+    <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
+      <h2 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold text-primary-foreground mb-4">
         Srdce našej kávy
       </h2>
-      <p className="text-lg md:text-xl text-primary-foreground/90 font-body">
+      <p className="text-base md:text-xl text-primary-foreground/90 font-body">
         Región Cerrado Mineiro, Brazília – tam, kde slnko a pôda dávajú kávovým zrnám ich jedinečný charakter.
       </p>
     </div>
@@ -183,15 +177,15 @@ const HeartSection = () => (
 );
 
 const FooterSection = () => (
-  <footer className="bg-muted py-16">
-    <div className="container mx-auto px-4">
-      <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto items-center">
+  <footer className="bg-muted py-12 md:py-16">
+    <div className="container mx-auto px-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 max-w-5xl mx-auto items-center">
         <div className="rounded-xl overflow-hidden shadow-lg">
-          <img src={officeDesk} alt="Kancelársky stôl" className="w-full h-64 object-cover" />
+          <img src={officeDesk} alt="Kancelársky stôl" className="w-full h-48 md:h-64 object-cover" />
         </div>
-        <div className="space-y-6">
-          <h3 className="text-2xl font-heading font-bold text-foreground">Kontaktujte nás</h3>
-          <div className="space-y-4 text-muted-foreground font-body">
+        <div className="space-y-5 md:space-y-6">
+          <h3 className="text-xl md:text-2xl font-heading font-bold text-foreground">Kontaktujte nás</h3>
+          <div className="space-y-3 md:space-y-4 text-sm md:text-base text-muted-foreground font-body">
             <div className="flex items-center gap-3">
               <MapPin className="w-5 h-5 text-coffee-gold shrink-0" />
               <span>Hlavná 123, 811 01 Bratislava</span>
@@ -217,9 +211,7 @@ const FooterSection = () => (
             ))}
           </div>
           <div className="pt-4 border-t border-border">
-            <div className="flex items-center gap-2">
-              <img src={coffeceLogo} alt="Coffece logo" className="h-6" />
-            </div>
+            <img src={coffeceLogo} alt="Coffece logo" className="h-8 md:h-10" />
             <p className="text-sm text-muted-foreground mt-2">© 2026 Coffece. Všetky práva vyhradené.</p>
           </div>
         </div>
