@@ -20,11 +20,11 @@ const HeroSection = () => (
       <p className="text-xl sm:text-2xl md:text-4xl font-heading text-primary-foreground/90 -mt-16 md:-mt-28 max-w-2xl mx-auto">
         Čerstvá káva pre váš office
       </p>
-      <p className="text-sm sm:text-base md:text-lg font-body text-primary-foreground/70 mt-3 mb-8 md:mb-10 max-w-xl mx-auto">
+      <p className="text-sm sm:text-base md:text-lg font-body text-primary-foreground/70 mt-3 mb-4 md:mb-6 max-w-xl mx-auto">
         Zabezpečte si prísun čerstvej praženej kávy do vašej kancelárie každý mesiac. Bez starostí a s profesionálnym prístupom.
       </p>
       <a
-        href="#ponuka"
+        href="#kontakt"
         className="inline-block border border-primary-foreground/50 bg-primary-foreground/10 backdrop-blur-sm text-primary-foreground font-body font-medium text-base md:text-lg px-10 md:px-12 py-3 md:py-4 rounded-full hover:bg-primary-foreground/20 transition-all"
       >
         Objednať
@@ -176,7 +176,7 @@ const HeartSection = () => (
 );
 
 const FooterSection = () => (
-  <footer className="bg-muted py-12 md:py-16">
+  <footer id="kontakt" className="bg-muted py-12 md:py-16">
     <div className="container mx-auto px-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 max-w-5xl mx-auto items-center">
         <div className="rounded-xl overflow-hidden shadow-lg">
