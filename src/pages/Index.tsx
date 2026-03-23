@@ -218,8 +218,7 @@ const FooterSection = () => (
           </div>
           <div className="pt-4 border-t border-border">
             <div className="flex items-center gap-2">
-              <Coffee className="w-5 h-5 text-coffee-gold" />
-              <span className="font-heading font-bold text-foreground">Coffece</span>
+              <img src={coffeceLogo} alt="Coffece logo" className="h-6" />
             </div>
             <p className="text-sm text-muted-foreground mt-2">© 2026 Coffece. Všetky práva vyhradené.</p>
           </div>
