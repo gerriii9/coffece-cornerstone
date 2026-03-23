@@ -176,7 +176,7 @@ const HeartSection = () => (
 );
 
 const FooterSection = () => (
-  <footer className="bg-muted py-12 md:py-16">
+  <footer id="kontakt" className="bg-muted py-12 md:py-16">
     <div className="container mx-auto px-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 max-w-5xl mx-auto items-center">
         <div className="rounded-xl overflow-hidden shadow-lg">
