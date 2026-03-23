@@ -4,8 +4,8 @@ import heroBg from "@/assets/hero-bg.jpg";
 import coffeeBag from "@/assets/coffee-bag.jpg";
 import plantation from "@/assets/plantation.jpg";
 import officeDesk from "@/assets/office-desk.jpg";
-import coffeePlant from "@/assets/coffee-plant.png";
-import coffeeBeans from "@/assets/coffee-beans.png";
+import labelZlaty from "@/assets/label-zlaty-standard.png";
+import labelOriginal from "@/assets/label-original.png";
 
 const HeroSection = () => (
   <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -71,15 +71,11 @@ const OfferSection = () => (
         Naša ponuka kávy
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
-        <div className="bg-coffee-gold rounded-2xl p-6 md:p-8 flex flex-col items-center text-center shadow-xl hover:scale-105 transition-transform">
-          <img src={coffeePlant} alt="Kávovník" className="h-28 md:h-40 mb-4 md:mb-6 object-contain" />
-          <h3 className="text-xl md:text-2xl font-heading font-bold text-coffee-dark mb-2">Zlatý štandard</h3>
-          <p className="text-sm md:text-base text-coffee-dark/80 font-body">Jemná, sladká chuť s orechovými tónmi</p>
+        <div className="rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition-transform">
+          <img src={labelZlaty} alt="Zlatý štandard" className="w-full h-auto" />
         </div>
-        <div className="bg-coffee-dark rounded-2xl p-6 md:p-8 flex flex-col items-center text-center shadow-xl hover:scale-105 transition-transform">
-          <img src={coffeeBeans} alt="Kávové zrná" className="h-28 md:h-40 mb-4 md:mb-6 object-contain" />
-          <h3 className="text-xl md:text-2xl font-heading font-bold text-primary-foreground mb-2">Originál</h3>
-          <p className="text-sm md:text-base text-primary-foreground/80 font-body">Intenzívna, plná chuť s čokoládovými tónmi</p>
+        <div className="rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition-transform">
+          <img src={labelOriginal} alt="Originál" className="w-full h-auto" />
         </div>
       </div>
     </div>
