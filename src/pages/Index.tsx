@@ -22,7 +22,7 @@ const HeroSection = () => (
       </p>
       <a
         href="#ponuka"
-        className="inline-block bg-coffee-gold text-coffee-dark font-body font-semibold text-base md:text-lg px-8 md:px-10 py-3 md:py-4 rounded-lg hover:brightness-110 transition-all"
+        className="inline-block border border-primary-foreground/50 bg-primary-foreground/10 backdrop-blur-sm text-primary-foreground font-body font-medium text-base md:text-lg px-10 md:px-12 py-3 md:py-4 rounded-full hover:bg-primary-foreground/20 transition-all"
       >
         Objednať
       </a>
