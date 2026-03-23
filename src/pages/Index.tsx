@@ -1,4 +1,5 @@
-import { Coffee, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
+import coffeceLogo from "@/assets/coffece-logo.png";
 import heroBg from "@/assets/hero-bg.jpg";
 import coffeeBag from "@/assets/coffee-bag.jpg";
 import plantation from "@/assets/plantation.jpg";
@@ -13,11 +14,8 @@ const HeroSection = () => (
       <div className="absolute inset-0 bg-coffee-dark/70" />
     </div>
     <div className="relative z-10 text-center px-4">
-      <div className="flex items-center justify-center gap-3 mb-8">
-        <Coffee className="w-10 h-10 text-coffee-gold" />
-        <h1 className="text-5xl md:text-7xl font-heading font-bold text-primary-foreground tracking-wide">
-          Coffece
-        </h1>
+      <div className="flex items-center justify-center mb-8">
+        <img src={coffeceLogo} alt="Coffece logo" className="h-16 md:h-24 brightness-0 invert" />
       </div>
       <p className="text-2xl md:text-4xl font-heading text-primary-foreground/90 mb-10 max-w-2xl mx-auto">
         Čerstvá káva pre váš office
@@ -220,8 +218,7 @@ const FooterSection = () => (
           </div>
           <div className="pt-4 border-t border-border">
             <div className="flex items-center gap-2">
-              <Coffee className="w-5 h-5 text-coffee-gold" />
-              <span className="font-heading font-bold text-foreground">Coffece</span>
+              <img src={coffeceLogo} alt="Coffece logo" className="h-6" />
             </div>
             <p className="text-sm text-muted-foreground mt-2">© 2026 Coffece. Všetky práva vyhradené.</p>
           </div>
