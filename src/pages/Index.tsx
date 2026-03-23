@@ -1,4 +1,5 @@
-import { Coffee, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
+import coffeceLogo from "@/assets/coffece-logo.png";
 import heroBg from "@/assets/hero-bg.jpg";
 import coffeeBag from "@/assets/coffee-bag.jpg";
 import plantation from "@/assets/plantation.jpg";
