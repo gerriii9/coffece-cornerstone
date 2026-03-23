@@ -4,8 +4,8 @@ import heroBg from "@/assets/hero-bg.jpg";
 import coffeeBag from "@/assets/coffee-bag.jpg";
 import plantation from "@/assets/plantation.jpg";
 import officeDesk from "@/assets/office-desk.jpg";
-import coffeePlant from "@/assets/coffee-plant.png";
-import coffeeBeans from "@/assets/coffee-beans.png";
+import labelZlaty from "@/assets/label-zlaty-standard.png";
+import labelOriginal from "@/assets/label-original.png";
 
 const HeroSection = () => (
   <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
