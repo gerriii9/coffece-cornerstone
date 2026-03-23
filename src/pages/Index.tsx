@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Mail, MapPin, Phone } from "lucide-react";
 import coffeceLogo from "@/assets/coffece-logo.png";
 import heroBg from "@/assets/hero-bg.jpg";
@@ -74,12 +75,12 @@ const OfferSection = () => (
         Naša ponuka kávy
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
-        <div className="rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition-transform">
+        <Link to="/zlaty-standard" className="rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition-transform block">
           <img src={labelZlaty} alt="Zlatý štandard" className="w-full h-auto" />
-        </div>
-        <div className="rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition-transform">
+        </Link>
+        <Link to="/original" className="rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition-transform block">
           <img src={labelOriginal} alt="Originál" className="w-full h-auto" />
-        </div>
+        </Link>
       </div>
     </div>
   </section>
