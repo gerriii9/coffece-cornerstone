@@ -20,7 +20,7 @@ const HeroSection = () => (
       <p className="text-xl sm:text-2xl md:text-4xl font-heading text-primary-foreground/90 -mt-16 md:-mt-28 max-w-2xl mx-auto">
         Čerstvá káva pre váš office
       </p>
-      <p className="text-sm sm:text-base md:text-lg font-body text-primary-foreground/70 mt-3 mb-8 md:mb-10 max-w-xl mx-auto">
+      <p className="text-sm sm:text-base md:text-lg font-body text-primary-foreground/70 mt-3 mb-4 md:mb-6 max-w-xl mx-auto">
         Zabezpečte si prísun čerstvej praženej kávy do vašej kancelárie každý mesiac. Bez starostí a s profesionálnym prístupom.
       </p>
       <a
