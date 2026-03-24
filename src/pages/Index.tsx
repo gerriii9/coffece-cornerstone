@@ -329,6 +329,7 @@ const Index = () => (
     <ProductDetailSection />
     <HowItWorksSection />
     <HeartSection />
+    <ContactSection />
     <FooterSection />
   </main>
 );
