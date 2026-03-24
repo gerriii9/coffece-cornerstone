@@ -200,33 +200,53 @@ const HeartSection = () => (
   </section>
 );
 
-const FooterSection = () => (
-  <footer id="kontakt" className="bg-muted py-12 md:py-16">
+const ContactSection = () => (
+  <section id="kontakt" className="py-14 md:py-28 bg-background">
     <div className="container mx-auto px-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 max-w-5xl mx-auto items-center">
-        <ScrollReveal>
-          <div className="rounded-xl overflow-hidden shadow-lg">
-            <img src={officeDesk} alt="Kancelársky stôl" className="w-full h-48 md:h-64 object-cover" />
-          </div>
-        </ScrollReveal>
-        <ScrollReveal delay={200}>
-          <div className="space-y-5 md:space-y-6">
-            <h3 className="text-xl md:text-2xl font-heading font-bold text-foreground">Kontaktujte nás</h3>
-            <div className="space-y-3 md:space-y-4 text-sm md:text-base text-muted-foreground font-body">
-              <div className="flex items-center gap-3">
-                <MapPin className="w-5 h-5 text-coffee-gold shrink-0" />
-                <span>Hlavná 123, 811 01 Bratislava</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-coffee-gold shrink-0" />
-                <span>+421 900 123 456</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-coffee-gold shrink-0" />
-                <span>info@coffece.sk</span>
-              </div>
+      <ScrollReveal>
+        <h2 className="text-2xl md:text-4xl font-heading font-bold text-center text-foreground mb-10 md:mb-16">
+          Kontaktujte nás
+        </h2>
+      </ScrollReveal>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 max-w-5xl mx-auto">
+        <ScrollReveal delay={100}>
+          <div className="space-y-6">
+            <h3 className="text-xl md:text-2xl font-heading font-bold text-foreground">
+              Zavolajte nám alebo napíšte
+            </h3>
+            <div className="space-y-4">
+              <a href="tel:+421900123456" className="flex items-center gap-4 group">
+                <div className="w-12 h-12 rounded-full bg-coffee-gold/10 flex items-center justify-center group-hover:bg-coffee-gold/20 transition-colors">
+                  <Phone className="w-5 h-5 text-coffee-gold" />
+                </div>
+                <div>
+                  <p className="text-xs text-muted-foreground font-body">Telefón</p>
+                  <p className="text-base font-heading text-foreground">+421 900 123 456</p>
+                </div>
+              </a>
+              <a href="mailto:info@coffece.sk" className="flex items-center gap-4 group">
+                <div className="w-12 h-12 rounded-full bg-coffee-gold/10 flex items-center justify-center group-hover:bg-coffee-gold/20 transition-colors">
+                  <Mail className="w-5 h-5 text-coffee-gold" />
+                </div>
+                <div>
+                  <p className="text-xs text-muted-foreground font-body">E-mail</p>
+                  <p className="text-base font-heading text-foreground">info@coffece.sk</p>
+                </div>
+              </a>
+              <a href="#" className="flex items-center gap-4 group">
+                <div className="w-12 h-12 rounded-full bg-coffee-gold/10 flex items-center justify-center group-hover:bg-coffee-gold/20 transition-colors">
+                  <MapPin className="w-5 h-5 text-coffee-gold" />
+                </div>
+                <div>
+                  <p className="text-xs text-muted-foreground font-body">Adresa</p>
+                  <p className="text-base font-heading text-foreground">Hlavná 123, 811 01 Bratislava</p>
+                </div>
+              </a>
             </div>
-            <div className="flex gap-4 pt-2">
+            <p className="text-sm md:text-base text-muted-foreground font-body pt-2">
+              Radi vám poradíme s výberom kávovaru aj kávových zŕn pre vašu firmu.
+            </p>
+            <div className="flex gap-4 pt-4">
               {["Facebook", "Instagram", "LinkedIn"].map((social) => (
                 <a
                   key={social}
@@ -237,13 +257,65 @@ const FooterSection = () => (
                 </a>
               ))}
             </div>
-            <div className="pt-4 border-t border-border">
-              <img src={coffeceLogo} alt="Coffece logo" className="h-8 md:h-10" />
-              <p className="text-sm text-muted-foreground mt-2">© 2026 Coffece. Všetky práva vyhradené.</p>
-            </div>
           </div>
         </ScrollReveal>
+
+        <ScrollReveal delay={250}>
+          <form
+            onSubmit={(e) => e.preventDefault()}
+            className="bg-card rounded-2xl p-6 md:p-8 shadow-xl border border-border/50 space-y-5"
+          >
+            <div>
+              <label className="block text-sm font-heading text-foreground mb-1.5">Meno a priezvisko</label>
+              <input
+                type="text"
+                placeholder="Ján Novák"
+                className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm font-body text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-heading text-foreground mb-1.5">Názov firmy</label>
+              <input
+                type="text"
+                placeholder="Vaša firma s.r.o."
+                className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm font-body text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-heading text-foreground mb-1.5">E-mail</label>
+              <input
+                type="email"
+                placeholder="jan@firma.sk"
+                className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm font-body text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-heading text-foreground mb-1.5">Vaša správa</label>
+              <textarea
+                rows={4}
+                placeholder="Napíšte nám..."
+                className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm font-body text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow resize-none"
+              />
+            </div>
+            <button
+              type="submit"
+              className="w-full flex items-center justify-center gap-2 bg-coffee-warm text-primary-foreground font-heading text-sm md:text-base px-6 py-3.5 rounded-lg hover:bg-coffee-dark hover:scale-[1.02] active:scale-[0.98] transition-all shadow-md"
+            >
+              <Send className="w-4 h-4" />
+              Odoslať správu
+            </button>
+          </form>
+        </ScrollReveal>
       </div>
+    </div>
+  </section>
+);
+
+const FooterSection = () => (
+  <footer className="bg-coffee-dark py-8">
+    <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <img src={coffeceLogo} alt="Coffece logo" className="h-8 brightness-0 invert" />
+      <p className="text-sm text-primary-foreground/50 font-body">© 2026 Coffece. Všetky práva vyhradené.</p>
     </div>
   </footer>
 );
