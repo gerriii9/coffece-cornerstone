@@ -32,13 +32,13 @@ const Original = () => (
             <p className="text-lg font-body text-foreground font-semibold mb-6">100% arabica</p>
             <div className="space-y-4 text-sm md:text-base text-muted-foreground font-body">
               <p><span className="font-semibold text-foreground">Profil chuti:</span> Intenzívny, plný, s čokoládovými a korenitými tónmi</p>
-              <p><span className="font-semibold text-foreground">Kvalita:</span> certifikovaná kvalita (80 bodov)</p>
+              <p><span className="font-semibold text-foreground">Praženie:</span> Tmavé</p>
               <p><span className="font-semibold text-foreground">Krajina pôvodu:</span> Brazília – Cerrado Mineiro</p>
-              <p><span className="font-semibold text-foreground">Spracovanie:</span> príodné sušenie/p>
+              <p><span className="font-semibold text-foreground">Spracovanie:</span> Mokré spracovanie</p>
               <p><span className="font-semibold text-foreground">Hmotnosť:</span> 250 g</p>
             </div>
             <p className="mt-6 text-muted-foreground font-body">
-              Pre milovníkov silnej kávy s výrazným charakterom a bohatým telom.
+              Pre milovníkov silnej kávy s výrazným charakterom a bohatým telom. 100% organické.
             </p>
             <a
               href="/#kontakt"

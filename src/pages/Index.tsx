@@ -56,9 +56,7 @@ const WhySection = () => (
         </ScrollReveal>
         <div className="space-y-6 md:space-y-8">
           {[
-            { title: "Maximálna čerstvosť", desc: "Dorucujeme kávu prazenú pred pár dnami, nie
-mesiacmi, čo zaručuje plnú arómu v kazdej
-šálke." },
+            { title: "Maximálna čerstvosť", desc: "Kávu pražíme až po vašej objednávke, aby ste dostali ten najlepší zážitok." },
             { title: "Jednoduchá administratíva", desc: "Žiadne zložité zmluvy. Objednajte jednoducho a rýchlo online." },
             { title: "Spoľahlivé doručenie", desc: "Doručíme priamo do vašej kancelárie, presne keď potrebujete." },
           ].map((item, i) => (
