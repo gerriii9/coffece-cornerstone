@@ -31,8 +31,8 @@ const ZlatyStandard = () => (
             </h1>
             <p className="text-lg font-body text-coffee-gold font-semibold mb-6">100% výberová arabica</p>
             <div className="space-y-4 text-sm md:text-base text-muted-foreground font-body">
-              <p><span className="font-semibold text-foreground">Profil chuti:</span> čokoláda, lieskové oriesky, čisty záver</p>
-              <p><span className="font-semibold text-foreground">kvalita:</span> certifikovaná kvalita (80 bodov)</p>
+              <p><span className="font-semibold text-foreground">Profil chuti:</span> Slivkovy lekvár, horká cokoláda, medová jemnost.</p>
+              <p><span className="font-semibold text-foreground">kvalita:</span> výberová kvalita (84 bodov)</p>
               <p><span className="font-semibold text-foreground">Krajina pôvodu:</span> Brazília – Cerrado Mineiro</p>
               <p><span className="font-semibold text-foreground">Spracovanie:</span> Prírodné sušenie</p>
               <p><span className="font-semibold text-foreground">Hmotnosť:</span> 250 g</p>
