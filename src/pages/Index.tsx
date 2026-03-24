@@ -9,7 +9,8 @@ import labelZlaty from "@/assets/label-zlaty-standard.png";
 import labelOriginal from "@/assets/label-original.png";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { Navbar } from "@/components/Navbar";
-
+import ZlatyStandard from "./ZlatyStandard";
+import Original from "./Original";
 const HeroSection = () => (
   <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
     <div className="absolute inset-0">
