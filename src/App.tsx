@@ -3,10 +3,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import Index from "./pages/index";
-import ZlatyStandard from "./pages/zlatystandard";
-import Original from "./pages/original";
-import NotFound from "./pages/notfound";
+import Index from "./pages/Index";
+import ZlatyStandard from "./pages/ZlatyStandard";
+import Original from "./pages/Original";
+import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
